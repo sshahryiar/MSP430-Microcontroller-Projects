@@ -1,0 +1,1 @@
+"./main.obj" "./Libraries/DS18B20.obj" "./Libraries/NRF905.obj" "./Libraries/delay.obj" "./Libraries/lcd.obj" "./Libraries/lcd_print.obj" "./Libraries/one_wire.obj" "../lnk_msp430f149.cmd" -llibc.a 
