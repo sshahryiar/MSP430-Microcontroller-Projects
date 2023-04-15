@@ -1,0 +1,1 @@
+"./main.obj" "./Libraries/TM1637.obj" "./Libraries/delay.obj" "../lnk_msp430f149.cmd" -llibc.a 
