@@ -1,0 +1,1 @@
+"./blink.obj" "./Libraries/PCF8574.obj" "./Libraries/SW_I2C.obj" "./Libraries/delay.obj" "./Libraries/lcd.obj" "./Libraries/lcd_print.obj" "../lnk_msp430g2553.cmd" -llibc.a 
