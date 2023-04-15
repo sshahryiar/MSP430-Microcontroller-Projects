@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/ToF10120_LIDAR_Demo_p430.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="E:/Current Works/ToF10120_LIDAR_Demo/Grace/ToF10120_LIDAR_Demo/ToF10120_LIDAR_Demo.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/ToF10120_LIDAR_Demo_p430.mak" src="package.bld"/>
+        <srcFile name="package/cfg/ToF10120_LIDAR_Demo_p430.o430.dep" src="package/cfg/ToF10120_LIDAR_Demo_p430.c"/>
+        <srcFile name="package/cfg/ToF10120_LIDAR_Demo_p430.dep" src="package/cfg/ToF10120_LIDAR_Demo_p430.cfg"/>
+        <srcFile name="package/cfg/ToF10120_LIDAR_Demo.x430.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.msp430.Generic"
+            version="ti.targets.msp430.Generic{1,0,0"
+            rawVersion=""
+            platform="undefined"
+            isa="430"
+            suffix="430"
+            rootDir="."
+            os="undefined"
+            rts="ti.targets.msp430.rts430">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="ToF10120_LIDAR_Demo"
+        pname="ToF10120_LIDAR_Demo.p430"
+        target="ti.targets.msp430.Generic"
+        platform="ti.platforms.msp430:MSP430G2452"
+        profile="debug"
+        isPartial="false"
+        xCfgScript="package/cfg/ToF10120_LIDAR_Demo_p430.cfg"
+        xCfgPrefix="package/cfg/ToF10120_LIDAR_Demo_p430"
+        cfgScript="E:/Current Works/ToF10120_LIDAR_Demo/Grace/ToF10120_LIDAR_Demo/ToF10120_LIDAR_Demo.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="ToF10120_LIDAR_Demo"
+        pname="ToF10120_LIDAR_Demo.x430"
+        target="ti.targets.msp430.Generic"
+        platform="ti.platforms.msp430:MSP430G2452"
+        profile="debug"
+        xCfgScript="package/cfg/ToF10120_LIDAR_Demo_p430.cfg"
+        xCfgPrefix="package/cfg/ToF10120_LIDAR_Demo_p430"
+        cfgScript="E:/Current Works/ToF10120_LIDAR_Demo/Grace/ToF10120_LIDAR_Demo/ToF10120_LIDAR_Demo.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="ToF10120_LIDAR_Demo.x430"
+        args=""
+        groupName="ToF10120_LIDAR_Demo.x430"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
